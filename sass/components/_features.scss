@@ -1,0 +1,33 @@
+.features__list {
+    @extend %flex-align;
+}
+
+.features__item {
+    width: 270px;
+    &:not(:last-child) {
+    margin-right: 30px;
+}
+}
+
+.features__icon {
+    @extend %flex-align;
+   height: 120px;
+    background: var(--secondary-background-color);
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.features__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-top: 30px;
+    @include fontparametrs(700, 14, 1.14, 0.03);
+    text-transform: uppercase;
+}
+
+.features__text {
+    margin-top: 0;
+    margin-bottom: 0px;
+    @include fontparametrs(400, 14, 1.71, 0.03);
+}
