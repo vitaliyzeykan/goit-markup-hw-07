@@ -1,8 +1,11 @@
 .team {
-  padding-bottom: 50px;
+  background-color: var(--secondary-background-color);
+}
+
+.team__header {
   @include fontparametrs(700, 36, 1.17, 0.03);
   text-align: center;
-  background-color: var(--secondary-background-color);
+  padding-bottom: 50px;
 }
 
 .team__list {
@@ -16,8 +19,8 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   &:not(:last-child) {
-  margin-right: 30px;
-}
+    margin-right: 30px;
+  }
 }
 
 .card__descr {
@@ -36,7 +39,3 @@
   text-align: center;
   margin-bottom: 16px;
 }
-
-
-
-
